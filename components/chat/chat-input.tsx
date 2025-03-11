@@ -12,6 +12,7 @@ import { Plus, Smile } from "lucide-react";
 import { channel } from "diagnostics_channel";
 import { useModal } from "@/hooks/use-modal-store";
 import { EmojiPicker } from "../emoji-picker";
+
 import { useRouter } from "next/navigation";
 
 interface ChatInputProps {
@@ -31,6 +32,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       content: "",
+      
     },
   });
 
@@ -73,6 +75,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                                 rounded-full p-1 flex items-center
                                 justify-center"
                   >
+                    
                     <Plus className="text-white dark:text-[#313338]" />
                   </button>
                   <input
@@ -91,6 +94,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                 </div>
                 </div>
               </FormControl>
+              
             </FormItem>
           )}
         />
