@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { currentProfile } from "@/lib/currentProfile";
 import { db } from "@/lib/db";
 import { Message } from "@prisma/client";
